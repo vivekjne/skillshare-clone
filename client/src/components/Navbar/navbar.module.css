@@ -1,0 +1,73 @@
+.navbar-container{
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0.8rem 1.5rem;
+    background: #ffffff;
+    height: 4rem;
+    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+.brand-style{
+    text-decoration: none;
+    color:#444;
+    font-size: 16px;
+}
+
+.brand-style:hover{
+    text-decoration: none;
+    color:#444;
+    
+}
+
+
+.link-style{
+    text-decoration: none;
+    color:#777;
+    font-size: 14px;
+    margin: 0px 2rem;
+}
+
+.link-style:hover{
+    text-decoration: none;
+    color:#444;
+    font-size: 14px;
+}
+
+
+.input{
+    width:400px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border:1px solid #ccc;
+    outline:none
+}
+
+.input:hover,
+.input:focus,
+.input:active
+{
+    border:1px solid #00949d;
+}
+
+.signup{
+    text-decoration: none;
+   
+    background: #00949d;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-left: 1rem;
+  
+}
+
+.signup:hover{
+    background: #00646A;
+    color: #ccc;
+    text-decoration: none;
+}
