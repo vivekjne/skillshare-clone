@@ -1,5 +1,5 @@
 .container{
-    height: 70vh;
+    height: 85vh;
     width: 100vw;
     position: relative;
     display: flex;
@@ -69,7 +69,7 @@ h5{
 .main-content{
     
     width: 100vw;
-    background: #fff;
+    background: #efefef;
     padding: 20px;
 
 }
@@ -101,4 +101,30 @@ h3{
     color:#00646A;
     
 
+}
+
+.explore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore button{
+    background: transparent;
+    border:1px solid #000;
+    padding: 5px 20px;
+    border-radius: 4px;
+    outline: none;
+    text-decoration: none;
+
+}
+
+.explore button:hover{
+    background: #000;
+    color:#fff;
+    outline: none;
+}
+
+ul{
+    list-style: none;
 }
