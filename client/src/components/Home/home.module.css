@@ -56,11 +56,17 @@ h5{
   display: inline-block;
 }
 
-.button:hover{
+.button:hover,
+.button:active,
+.button:focus
+{
+    outline: none;
     color: #fff;
     text-decoration: none;
     background-color: #00646A;
 }
+
+
 
 .button a{
     text-decoration: none
