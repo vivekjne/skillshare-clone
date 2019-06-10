@@ -2,11 +2,12 @@ import React from "react";
 import styles from "./home.module.css";
 import { Link } from "react-router-dom";
 import SkillCard from "../SkillCard"
+import { Container, Row, Col } from 'reactstrap';
 const Home = () => {
   return (
     <div>
       <div className={styles["container"]}>
-        <video autoplay muted loop id="myVideo">
+        <video  autoPlay muted loop id="myVideo">
           <source
             src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
             type="video/mp4"
@@ -48,7 +49,81 @@ const Home = () => {
 
 
         </div>
+
+        <div className={styles.explore}>
+            <button>
+                Explore classes
+            </button>
+        </div>
+       
       </div>
+      <div style={{backgroundColor:"#fff",padding:"10px"}}>
+        <Container >
+            <Row>
+                <Col sm="4" xs="12">
+                    <img src="https://static.skillshare.com/assets/images/homepage/how-it-works/hand-picked.png" style={{width:"200px"}}/>
+                </Col >
+
+                <Col sm="4" xs="12">
+                    <img src="https://static.skillshare.com/assets/images/homepage/how-it-works/hand-picked.png"  style={{width:"200px"}}/>
+                </Col>
+
+
+                <Col sm="4" xs="12">
+                    <img src="https://static.skillshare.com/assets/images/homepage/how-it-works/hand-picked.png"  style={{width:"200px"}}/>
+                </Col>
+            </Row>
+        </Container>
+        </div>
+        <div style={{width:"100vw"}}>
+            <Container>
+                <Row>
+                    <Col sm="3" xs="12">
+                        <ul>
+                            <li>Company</li>
+                            <li>About</li>
+                            <li>Careers</li>
+                            <li>Press</li>
+                            <li>Blog</li>
+                            <li>Affiliates</li>
+                        </ul>
+                    </Col>
+
+                    <Col sm="3" xs="12">
+                        <ul>
+                            <li>Community</li>
+                            <li>About</li>
+                            <li>Careers</li>
+                            <li>Press</li>
+                            <li>Blog</li>
+                            <li>Affiliates</li>
+                        </ul>
+                    </Col>
+
+                    <Col sm="3" xs="12">
+                        <ul>
+                            <li>Teaching</li>
+                            <li>About</li>
+                            <li>Careers</li>
+                            <li>Press</li>
+                            <li>Blog</li>
+                            <li>Affiliates</li>
+                        </ul>
+                    </Col>
+
+                    <Col sm="3" xs="12">
+                        <ul>
+                            <li>Mobile</li>
+                            <li>About</li>
+                            <li>Careers</li>
+                            <li>Press</li>
+                            <li>Blog</li>
+                            <li>Affiliates</li>
+                        </ul>
+                    </Col>
+                </Row>
+            </Container>
+        </div>
     </div>
   );
 };
