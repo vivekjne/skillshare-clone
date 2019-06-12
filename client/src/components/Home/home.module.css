@@ -56,12 +56,25 @@ h5{
   display: inline-block;
 }
 
+<<<<<<< HEAD
 .button:hover{
+=======
+.button:hover,
+.button:active,
+.button:focus
+{
+    outline: none;
+>>>>>>> c01ce19d02775c756006de2b7c9d4f6aba9a3098
     color: #fff;
     text-decoration: none;
     background-color: #00646A;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> c01ce19d02775c756006de2b7c9d4f6aba9a3098
 .button a{
     text-decoration: none
 }

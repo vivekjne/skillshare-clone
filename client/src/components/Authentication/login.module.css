@@ -1,0 +1,8 @@
+.login-content-left{
+    height: 400px;
+    background:  url("https://images.unsplash.com/photo-1560146491-308b0f69a52a?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255,255,255,0.7)
+}

@@ -1,9 +1,18 @@
-import React from "react";
+import React,{useState} from "react";
 import styles from "./home.module.css";
 import { Link } from "react-router-dom";
 import SkillCard from "../SkillCard"
 import { Container, Row, Col } from 'reactstrap';
+import Login from "../Authentication/Login"
 const Home = () => {
+
+  const [isLogin,setLogin] = useState(false)
+
+
+  const toggleLogin=()=>{
+    setLogin(!isLogin)
+  }
+
   return (
     <div>
       <div className={styles["container"]}>
@@ -16,9 +25,9 @@ const Home = () => {
         <div className={styles["text-container"]}>
           <h1>Tomorrow is for the Taking</h1>
           <h5>Thousands of classes to fuel your creativity and career.</h5>
-          <Link className={styles["button"]}>
-            <a>Get started for free</a>
-          </Link>
+         
+            <button onClick={toggleLogin} className={styles["button"]}>Get started for free</button>
+         
         </div>
       </div>
       <div className={styles["main-content"]}>
@@ -124,6 +133,11 @@ const Home = () => {
                 </Row>
             </Container>
         </div>
+
+        <Login 
+        toggleLogin={toggleLogin}
+        modal={isLogin}
+        />
     </div>
   );
 };
